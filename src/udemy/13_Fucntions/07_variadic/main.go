@@ -13,6 +13,6 @@ func average(sf ...float64) float64 {
 }
 
 func main() {
-	n := average(43, 56, 87, 12, 45, 57)
+	n := average(2, 4)
 	fmt.Println(n)
 }
