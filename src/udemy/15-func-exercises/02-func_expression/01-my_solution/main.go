@@ -4,22 +4,22 @@
 // For example:
 // - half(1) returns (0, false)
 // - half(2) returns (1, true)
+// Modify the previous program to use a func expression.
 
 package main
 
 import "fmt"
 
-func half(arg int) (int, bool) {
-	div := arg / 2
-	var sndReturn bool
-	if div % 2 == 0 {
-		sndReturn = false
-	} else {
-		sndReturn = true
-	}
-	return div, sndReturn
-}
-
 func main() {
+	half = func(arg int) (int, bool) {
+		div := arg / 2
+		var sndReturn bool
+		if div % 2 == 0 {
+			sndReturn = false
+		} else {
+			sndReturn = true
+		}
+		return div, sndReturn
+	}
 	fmt.Println(half(1))
 }

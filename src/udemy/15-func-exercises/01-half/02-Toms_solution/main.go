@@ -9,10 +9,10 @@ package main
 
 import "fmt"
 
-func half(arg int) (int, bool) {
+func Half(arg int) (int, bool) {
 	return arg / 2, arg%2 == 0
 }
 
 func main() {
-	fmt.Println(half(1))
+	fmt.Println(Half(1))
 }

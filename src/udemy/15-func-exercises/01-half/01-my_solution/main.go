@@ -9,7 +9,7 @@ package main
 
 import "fmt"
 
-func half(arg int) (int, bool) {
+func Half(arg int) (int, bool) {
 	div := arg / 2
 	var sndReturn bool
 	if div % 2 == 0 {
@@ -21,5 +21,5 @@ func half(arg int) (int, bool) {
 }
 
 func main() {
-	fmt.Println(half(1))
+	fmt.Println(Half(1))
 }
