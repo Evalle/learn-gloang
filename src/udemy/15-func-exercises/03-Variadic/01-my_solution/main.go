@@ -10,8 +10,6 @@ package main
 import "fmt"
 
 func findBiggest(sf ...int) int {
-	fmt.Println(sf)
-	fmt.Printf("%T \n", sf)
 	var biggest int
 	for _, v := range sf {
 		fmt.Println(v)
