@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	records := make([][]string, 0)
-	fmt.Println(records)
-	student1 := make([]string,5)
-	for i := 0;i < 5;i++ {
-		student1[i] = "phil"
+	transactions := make([][]int, 0, 3)
+	for i := 0; i < 3; i++ {
+		transaction := make([]int, 0)
+		for j := 0; j < 4; j++ {
+			transaction = append(transaction, j)
+		}
+		transactions = append(transactions, transaction)
 	}
-	records = append(records, student1)
-	fmt.Println(records)
+	fmt.Println(transactions)
 }
