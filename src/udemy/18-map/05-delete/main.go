@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	m := map[string]string{
-		"Tod":    "teacher",
-		"Evgeny": "student",
+	m := map[int]string{
+		1: "Hello",
+		2: "Bonjour",
+		3: "Ahoj",
 	}
 	fmt.Println(m)
-	delete(m, "Evgeny")
+	delete(m, 2)
 	fmt.Println(m)
 }
