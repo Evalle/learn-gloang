@@ -25,7 +25,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "reading input ", err)
 	}
 	i := 0
-	for k, _ := range words {
+	for k := range words {
 		fmt.Println(k)
 		if i == 200 {
 			break
