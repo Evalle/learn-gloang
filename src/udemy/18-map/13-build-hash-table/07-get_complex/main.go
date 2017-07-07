@@ -13,6 +13,7 @@ func main() {
 		log.Fatal(err)
 	}
 	page, err := ioutil.ReadAll(response.Body)
+	response.Body.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
